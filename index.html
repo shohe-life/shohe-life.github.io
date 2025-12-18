@@ -1,13 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ソフトエンジニア しょへ - Flutterアプリ開発、便利ツール開発（GAS/iPhoneショートカット）を承ります。関西で活動中。オンライン相談可能。">
+  <meta name="keywords" content="Flutter,アプリ開発,GAS,iPhoneショートカット,自動化,関西,エンジニア">
+  <title>しょへ - ソフトエンジニア | Flutter開発・便利ツール開発</title>
+
+  <!-- OGP -->
+  <meta property="og:title" content="しょへ - ソフトエンジニア | Flutter開発・便利ツール開発">
+  <meta property="og:description" content="Flutterアプリ開発、便利ツール開発（GAS/iPhoneショートカット）を承ります。お客様に寄り添った提案が得意です。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/home/">
+  <meta property="og:image" content="https://yourusername.github.io/home/assets/ogp.png">
+  <meta property="og:site_name" content="しょへ - ソフトエンジニア">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="しょへ - ソフトエンジニア | Flutter開発・便利ツール開発">
+  <meta name="twitter:description" content="Flutterアプリ開発、便利ツール開発（GAS/iPhoneショートカット）を承ります。">
+  <meta name="twitter:image" content="https://yourusername.github.io/home/assets/ogp.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>こんにちは！</h1>
-  <p>GitHub Pagesで公開中</p>
+  <!-- ヘッダー -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">しょへ</a>
+      <button class="hamburger" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="services.html">サービス</a></li>
+          <li><a href="works.html">実績</a></li>
+          <li><a href="about.html">プロフィール</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-profile">
+        <img src="design/SNSアイコン透過.png" alt="しょへのプロフィール画像" class="hero-profile-img">
+      </div>
+      <h1>寄り添った提案で、<br>あなたの「やりたい」を形にします</h1>
+      <p>Flutterでのスマホアプリ開発や、GAS・iPhoneショートカットを使った便利ツール開発が得意です。<br>
+      小さく作って早く試す進め方で、一緒に最適な形を見つけていきます。</p>
+      <div class="cta-buttons">
+        <a href="https://forms.gle/dMRcMFJDeiWTYu1V7" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">お問い合わせはこちら</a>
+        <a href="services.html" class="btn btn-secondary btn-large">サービス詳細</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス概要 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">提供サービス</h2>
+      <p class="section-subtitle">何を頼めるかが一目で分かる、2つのサービス</p>
+
+      <div class="card-grid">
+        <!-- サービス1: スマホアプリ開発 -->
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>スマホアプリ開発（Flutter）</h3>
+          <p>個人・小規模事業者・社内業務を効率化したい方に向けて、要件整理から実装、必要に応じてストア公開サポートまで対応します。</p>
+          <p class="card-meta"><strong>成果物:</strong> アプリ、ソースコード、運用手順<br>
+          <strong>期間・価格:</strong> 要相談</p>
+          <a href="services.html" class="card-link">詳しく見る</a>
+        </div>
+
+        <!-- サービス2: 便利ツール開発 -->
+        <div class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>便利ツール開発</h3>
+          <p>GAS・iPhoneショートカット・小さな自動化で、毎日の手作業を減らします。データ整形、連携、通知などお任せください。</p>
+          <p class="card-meta"><strong>成果物:</strong> スクリプト/ショートカット、使い方メモ<br>
+          <strong>期間・価格:</strong> 要相談</p>
+          <a href="services.html" class="card-link">詳しく見る</a>
+        </div>
+      </div>
+
+      <div class="notice">
+        <p>💡 未経験の開発言語に挑戦することも可能ですが、学習コストが乗るため料金が割高になる場合があります。まずはお気軽にご相談ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 実績ハイライト -->
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">実績</h2>
+      <p class="section-subtitle">これまでの制作実績をご紹介します</p>
+
+      <div class="card-grid">
+        <!-- ココナラ -->
+        <div class="card">
+          <div class="card-icon">🌟</div>
+          <h3>ココナラでの実績</h3>
+          <p>ココナラにて、アプリ開発や自動化ツールの制作サービスを提供しています。実績とレビューをご確認いただけます。</p>
+          <a href="https://coconala.com/users/1224378" target="_blank" rel="noopener noreferrer" class="card-link">ココナラページを見る</a>
+        </div>
+
+        <!-- ライフコンパス -->
+        <div class="card">
+          <div class="card-icon">🧭</div>
+          <h3>ライフコンパス（紹介ページ）</h3>
+          <p>生活を便利にするアプリ「ライフコンパス」の紹介ページです。実際の開発事例としてご覧ください。</p>
+          <a href="https://x.gd/PM8E2" target="_blank" rel="noopener noreferrer" class="card-link">紹介ページを見る</a>
+        </div>
+      </div>
+
+      <p class="text-center mt-2" style="color: var(--text-light); font-size: 0.95rem;">※ 守秘義務の関係上、公開できない実績も多数ございます</p>
+
+      <div class="text-center mt-2">
+        <a href="works.html" class="btn btn-primary">実績一覧を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 依頼の流れ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">依頼の流れ</h2>
+      <p class="section-subtitle">初めての方も安心。明確なステップで進めます</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>お問い合わせ</h3>
+          <p>フォームまたはメールでお気軽にご連絡ください</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>ヒアリング</h3>
+          <p>やりたいことや課題をお聞きし、要件を整理します</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>提案・見積</h3>
+          <p>最適な進め方と概算費用をご提案します</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>開発・納品</h3>
+          <p>小さく作って確認しながら進め、完成したら納品します</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <h3>アフターフォロー</h3>
+          <p>使い方説明や簡単な修正対応も可能です</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">よくある質問</h2>
+      <p class="section-subtitle">お客様からよくいただくご質問にお答えします</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">料金はどのくらいかかりますか?</div>
+          <div class="faq-answer">内容や規模により異なります。まずはヒアリングをさせていただき、お見積りをご提示いたします。小規模な自動化であれば数万円から、アプリ開発は要件次第で幅があります。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">どんな進め方をしますか?</div>
+          <div class="faq-answer">最初に要件を整理し、小さく作って動くものを早めにお見せします。確認しながら進めることで、認識のズレを防ぎます。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">どこまで対応してもらえますか?</div>
+          <div class="faq-answer">要件整理、設計、実装、テスト、納品、運用手順の作成まで対応可能です。ストア公開や運用サポートもご相談ください。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">納期はどのくらいですか?</div>
+          <div class="faq-answer">内容により異なりますが、簡単な自動化であれば数日〜1週間、アプリ開発は数週間〜数ヶ月が目安です。お急ぎの場合もご相談ください。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">納品後の保守はお願いできますか?</div>
+          <div class="faq-answer">はい、別途ご相談の上で対応可能です。簡単な修正や使い方のサポートもお気軽にお問い合わせください。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section">
+        <h2>まずはお気軽にご相談ください</h2>
+        <p>「こんなことできる?」「いくらくらい?」など、<br>小さな疑問でも大丈夫です。お待ちしています。</p>
+        <div class="cta-buttons">
+          <a href="https://forms.gle/dMRcMFJDeiWTYu1V7" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">お問い合わせフォーム</a>
+          <a href="services.html" class="btn btn-secondary btn-large">サービス詳細</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>しょへ</h3>
+          <p>ソフトエンジニア<br>Flutter開発 / 便利ツール開発<br>関西で活動中（オンライン相談可）</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>サイトマップ</h3>
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="works.html">実績</a></li>
+            <li><a href="about.html">プロフィール</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>リンク</h3>
+          <ul>
+            <li><a href="https://coconala.com/users/1224378" target="_blank" rel="noopener noreferrer">ココナラ</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 しょへ. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
