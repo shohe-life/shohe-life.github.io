@@ -310,6 +310,7 @@ footer {
 
 .btn-primary:hover {
   background-color: var(--primary-dark);
+  color: white;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
