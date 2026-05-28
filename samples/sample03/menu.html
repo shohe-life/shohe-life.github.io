@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー | パン工房 マドレーヌ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav nav--scrolled">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main">パン工房 マドレーヌ</span>
+        <span class="nav__logo-sub">Boulangerie Madeleine</span>
+      </a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="menu.html" class="nav__active">メニュー</a></li>
+          <li><a href="about.html">店舗について</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="access.html" class="nav__cta">アクセス</a></li>
+        </ul>
+      </nav>
+      <button class="nav__hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="nav__drawer">
+    <a href="menu.html">メニュー</a>
+    <a href="about.html">店舗について</a>
+    <a href="news.html">お知らせ</a>
+    <a href="access.html" class="nav__cta">アクセス</a>
+  </div>
+  <div class="nav__overlay"></div>
+
+  <section class="page-hero">
+    <span class="page-hero__label">MENU</span>
+    <h1 class="page-hero__title">メニュー</h1>
+    <p class="page-hero__sub">毎朝焼きたてのパンをご用意しています。<br>ラインナップは日によって異なります。</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Category nav -->
+      <div class="menu-cat-nav fade-up">
+        <a href="#shoku">食パン・トースト系</a>
+        <a href="#hard">フランスパン・ハード系</a>
+        <a href="#sweet">菓子パン</a>
+        <a href="#sandwich">サンドイッチ</a>
+        <a href="#seasonal">季節・限定</a>
+      </div>
+
+      <!-- 食パン・トースト系 -->
+      <div class="menu-section" id="shoku">
+        <h2 class="menu-section__title fade-up">食パン・トースト系</h2>
+        <div class="bread-grid">
+          <div class="bread-card fade-up delay-1">
+            <div class="bread-card__img bread-card__img--shoku">
+              <span class="bread-card__img-icon">🍞</span>
+              <span class="bread-card__badge bread-card__badge--popular">人気No.1</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">毎日食パン（1斤）</p>
+              <p class="bread-card__desc">地元産小麦を使ったしっとり食パン。そのままでも、トーストしても毎日食べたくなる定番の一品です。</p>
+              <p class="bread-card__price">¥380 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-2">
+            <div class="bread-card__img bread-card__img--shoku">
+              <span class="bread-card__img-icon">🍞</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">全粒粉食パン（1斤）</p>
+              <p class="bread-card__desc">国産全粒粉をブレンドし、香ばしくて栄養豊かな食パン。噛むほど旨みが広がります。</p>
+              <p class="bread-card__price">¥440 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-3">
+            <div class="bread-card__img bread-card__img--shoku">
+              <span class="bread-card__img-icon">🥛</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">ミルク食パン（1斤）</p>
+              <p class="bread-card__desc">牛乳をたっぷり使ったやさしい甘みの食パン。ふんわりとしたやわらかい食感でお子様にも人気です。</p>
+              <p class="bread-card__price">¥420 <small>（税込）</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- フランスパン・ハード系 -->
+      <div class="menu-section" id="hard">
+        <h2 class="menu-section__title fade-up">フランスパン・ハード系</h2>
+        <div class="bread-grid">
+          <div class="bread-card fade-up delay-1">
+            <div class="bread-card__img bread-card__img--hard">
+              <span class="bread-card__img-icon">🥖</span>
+              <span class="bread-card__badge">自慢の一品</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">バゲット</p>
+              <p class="bread-card__desc">外はパリッ、中はもっちり。シェフが毎朝こだわって焼き上げるバゲット。スープやチーズとの相性も抜群。</p>
+              <p class="bread-card__price">¥320 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-2">
+            <div class="bread-card__img bread-card__img--hard">
+              <span class="bread-card__img-icon">🍞</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">カンパーニュ（ハーフ）</p>
+              <p class="bread-card__desc">長時間発酵でつくる田舎パン。酸味と深い旨みが特徴で、ワインや煮込み料理に合います。</p>
+              <p class="bread-card__price">¥480 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-3">
+            <div class="bread-card__img bread-card__img--hard">
+              <span class="bread-card__img-icon">🌾</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">ライ麦パン</p>
+              <p class="bread-card__desc">ライ麦をたっぷり使った風味豊かなパン。ずっしりとした食べごたえと独特の香りが楽しめます。</p>
+              <p class="bread-card__price">¥420 <small>（税込）</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 菓子パン -->
+      <div class="menu-section" id="sweet">
+        <h2 class="menu-section__title fade-up">菓子パン</h2>
+        <div class="bread-grid">
+          <div class="bread-card fade-up delay-1">
+            <div class="bread-card__img bread-card__img--sweet">
+              <span class="bread-card__img-icon">🍮</span>
+              <span class="bread-card__badge bread-card__badge--popular">人気</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">クリームパン</p>
+              <p class="bread-card__desc">卵黄をたっぷり使ったなめらかカスタードクリームが入った定番の菓子パン。子どもから大人まで大好きな一品。</p>
+              <p class="bread-card__price">¥230 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-2">
+            <div class="bread-card__img bread-card__img--sweet">
+              <span class="bread-card__img-icon">🫘</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">あんぱん</p>
+              <p class="bread-card__desc">北海道産小豆を使った粒あんたっぷり。ほどよい甘さで飽きのこない、毎日食べたい定番あんぱんです。</p>
+              <p class="bread-card__price">¥200 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-3">
+            <div class="bread-card__img bread-card__img--sweet">
+              <span class="bread-card__img-icon">🍈</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">メロンパン</p>
+              <p class="bread-card__desc">サクサクのクッキー生地と、やわらかいパン生地のコントラストが楽しい一品。バター風味が豊か。</p>
+              <p class="bread-card__price">¥240 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-1">
+            <div class="bread-card__img bread-card__img--sweet">
+              <span class="bread-card__img-icon">🍫</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">チョコデニッシュ</p>
+              <p class="bread-card__desc">サクサクのデニッシュ生地にチョコレートクリームをたっぷり。ちょっとした贅沢なおやつに。</p>
+              <p class="bread-card__price">¥280 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-2">
+            <div class="bread-card__img bread-card__img--sweet">
+              <span class="bread-card__img-icon">🌀</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">シナモンロール</p>
+              <p class="bread-card__desc">ふんわりとした生地にシナモンシュガーを巻き込んだ人気の新定番。アイシングの甘さがクセになります。</p>
+              <p class="bread-card__price">¥320 <small>（税込）</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- サンドイッチ -->
+      <div class="menu-section" id="sandwich">
+        <h2 class="menu-section__title fade-up">サンドイッチ</h2>
+        <div class="bread-grid">
+          <div class="bread-card fade-up delay-1">
+            <div class="bread-card__img bread-card__img--sandwich">
+              <span class="bread-card__img-icon">🥚</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">たまごサンド</p>
+              <p class="bread-card__desc">ゆでたまごをふんわりとした食パンで挟んだ定番サンド。マヨネーズのまろやかさと卵の旨みが絶妙です。</p>
+              <p class="bread-card__price">¥380 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-2">
+            <div class="bread-card__img bread-card__img--sandwich">
+              <span class="bread-card__img-icon">🐟</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">ツナクリームサンド</p>
+              <p class="bread-card__desc">ツナとクリームチーズをブレンドしたコクのあるサンドイッチ。パリッとしたバゲットとよく合います。</p>
+              <p class="bread-card__price">¥420 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-3">
+            <div class="bread-card__img bread-card__img--sandwich">
+              <span class="bread-card__img-icon">🥓</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">BLTサンド</p>
+              <p class="bread-card__desc">ベーコン・レタス・トマトの鉄板サンドイッチ。全粒粉食パンを使うことで、より満足感のある仕上がりに。</p>
+              <p class="bread-card__price">¥460 <small>（税込）</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 季節・限定 -->
+      <div class="menu-section" id="seasonal">
+        <h2 class="menu-section__title fade-up">季節・限定</h2>
+        <p class="section__lead fade-up delay-1" style="margin-bottom: 28px;">旬の素材を使った期間限定パンです。なくなり次第終了します。</p>
+        <div class="bread-grid">
+          <div class="bread-card fade-up delay-2">
+            <div class="bread-card__img bread-card__img--seasonal">
+              <span class="bread-card__img-icon">🍓</span>
+              <span class="bread-card__badge bread-card__badge--limited">〜5月末</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">いちごのクリームデニッシュ</p>
+              <p class="bread-card__desc">地元産いちごをたっぷり使ったクリームデニッシュ。甘酸っぱいフルーツとサクサク生地の春の一品。</p>
+              <p class="bread-card__price">¥340 <small>（税込）</small></p>
+            </div>
+          </div>
+          <div class="bread-card fade-up delay-3">
+            <div class="bread-card__img bread-card__img--seasonal">
+              <span class="bread-card__img-icon">🍵</span>
+            </div>
+            <div class="bread-card__body">
+              <p class="bread-card__name">抹茶あんぱん</p>
+              <p class="bread-card__desc">京都産の上質な抹茶を練り込んだ生地に、こし餡を包んだ和のあんぱん。やさしい風味が広がります。</p>
+              <p class="bread-card__price">¥250 <small>（税込）</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section--cta">
+    <div class="container">
+      <span class="section__label cta__label">ACCESS</span>
+      <h2 class="cta__title fade-up">毎朝7時、<br>お待ちしています。</h2>
+      <p class="cta__sub fade-up delay-1">売り切れてしまうことも多いので、お早めにどうぞ。</p>
+      <div class="fade-up delay-2">
+        <a href="access.html" class="btn btn--primary btn--lg">アクセス・営業時間を見る</a>
+        <p class="cta__hours">月曜定休・不定休あり / 営業時間 7:00〜18:00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__logo">パン工房 マドレーヌ</p>
+          <p class="footer__logo-sub">Boulangerie Madeleine</p>
+          <p class="footer__address">
+            シュークリーム県エクレア市パン町3-1-5<br>
+            TEL: 0000-00-0000<br>
+            7:00〜18:00（売り切れ次第閉店）<br>
+            定休日：月曜日・不定休
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <a href="menu.html">メニュー</a>
+          <a href="about.html">店舗について</a>
+          <a href="news.html">お知らせ</a>
+          <a href="access.html">アクセス</a>
+        </nav>
+      </div>
+      <p class="footer__copy">© 2026 パン工房 マドレーヌ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 50));
+    const hamburger = document.querySelector('.nav__hamburger');
+    const drawer = document.querySelector('.nav__drawer');
+    const overlay = document.querySelector('.nav__overlay');
+    function closeMenu() { hamburger.classList.remove('is-open'); drawer.classList.remove('is-open'); overlay.classList.remove('is-open'); }
+    hamburger.addEventListener('click', () => { const o = !drawer.classList.contains('is-open'); o ? (drawer.classList.add('is-open'), overlay.classList.add('is-open'), hamburger.classList.add('is-open')) : closeMenu(); });
+    overlay.addEventListener('click', closeMenu);
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); } }); }, { threshold: 0.15 });
+    fadeEls.forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>

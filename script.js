@@ -145,6 +145,41 @@ function showMessage(text, type) {
   }
 }
 
+// ==================== フェードアップアニメーション ====================
+document.addEventListener('DOMContentLoaded', function() {
+  const targets = document.querySelectorAll(
+    '.section-title, .section-subtitle, .card, .step, .faq-item, .notice, .cta-section, .hero-content, .profile-section'
+  );
+
+  // 兄弟要素にスタッガー遅延を付与
+  const staggerParents = document.querySelectorAll('.card-grid, .steps, .faq-list');
+  staggerParents.forEach(function(parent) {
+    Array.from(parent.children).forEach(function(child, i) {
+      child.style.transitionDelay = (i * 0.1) + 's';
+    });
+  });
+
+  targets.forEach(function(el) {
+    el.classList.add('fade-up');
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(function(el) { el.classList.add('visible'); });
+    return;
+  }
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  targets.forEach(function(el) { observer.observe(el); });
+});
+
 // ==================== ページトップへ戻るボタン（オプション） ====================
 document.addEventListener('DOMContentLoaded', function() {
   // スクロール時の処理

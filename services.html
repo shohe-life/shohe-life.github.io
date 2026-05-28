@@ -47,7 +47,7 @@
   <section class="hero" style="padding: 3rem 1.5rem;">
     <div class="hero-content">
       <h1>サービス内容</h1>
-      <p>あなたの「やりたい」を実現するための2つのサービスをご用意しています</p>
+      <p>アプリ開発・自動化ツール・ホームページ制作、幅広くお手伝いします</p>
     </div>
   </section>
 
@@ -55,8 +55,7 @@
   <section class="section">
     <div class="container">
       <!-- サービス1: スマホアプリ開発 -->
-      <div class="card" style="margin-bottom: 3rem;">
-        <div class="card-icon">📱</div>
+      <div id="app" class="card" style="margin-bottom: 3rem;">
         <h2>スマホアプリ開発（Flutter）</h2>
         <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 1.5rem;">
           個人の方から小規模事業者、社内業務の効率化を考えている企業まで、Flutterを使ったスマホアプリ開発をお手伝いします。
@@ -80,39 +79,28 @@
 
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">提供内容</h3>
         <ul style="list-style: none; padding-left: 0;">
-          <li style="padding: 0.5rem 0;">📋 要件整理（やりたいことを一緒に整理します）</li>
-          <li style="padding: 0.5rem 0;">🎨 画面設計・UI/UX設計</li>
-          <li style="padding: 0.5rem 0;">💻 実装（iOS/Android両対応）</li>
-          <li style="padding: 0.5rem 0;">🧪 テスト・動作確認</li>
-          <li style="padding: 0.5rem 0;">📱 ストア公開サポート（必要に応じて）</li>
+          <li style="padding: 0.5rem 0;">要件整理（やりたいことを一緒に整理します）</li>
+          <li style="padding: 0.5rem 0;">画面設計・UI/UX設計</li>
+          <li style="padding: 0.5rem 0;">実装（iOS/Android両対応）</li>
+          <li style="padding: 0.5rem 0;">テスト・動作確認</li>
+          <li style="padding: 0.5rem 0;">ストア公開サポート（必要に応じて）</li>
         </ul>
 
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">成果物</h3>
         <p>アプリ本体、ソースコード、簡単な運用手順書をお渡しします。</p>
 
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">よくある依頼例</h3>
-        <div class="card-grid" style="margin-top: 1rem;">
-          <div class="card" style="background-color: var(--bg-color);">
-            <h4>業務特化の計算ツール</h4>
-            <p>材料費計算、工数計算、見積もり計算など</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <h4>データ変換ツール</h4>
-            <p>CSVやJSON形式の変換・整形</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <h4>QRコード・バーコード生成</h4>
-            <p>業務用のコード生成ツール</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <h4>テキスト処理ツール</h4>
-            <p>文字数カウント、正規表現置換、エンコード変換など</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <h4>シンプルな記録アプリ</h4>
-            <p>日報、作業ログなど（ローカル保存）</p>
-          </div>
+        <div class="tags" style="margin-top: 1rem;">
+          <span class="tag">業務特化の計算ツール（材料費・工数・見積もりなど）</span>
+          <span class="tag">データ変換ツール（CSV・JSON形式の変換・整形）</span>
+          <span class="tag">QRコード・バーコード生成</span>
+          <span class="tag">テキスト処理ツール（文字数カウント・エンコード変換など）</span>
+          <span class="tag">シンプルな記録アプリ（日報・作業ログなど）</span>
         </div>
+
+        <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--text-light);">
+          自身のリリース実績として、終活アプリ「<a href="https://x.gd/PM8E2" target="_blank" rel="noopener noreferrer" style="color: var(--primary-dark);">ライフコンパス</a>」やおうちの設備点検を記録する「<a href="https://apps.apple.com/us/app/%E3%81%8A%E3%81%86%E3%81%A1%E7%82%B9%E6%A4%9C%E3%83%A1%E3%83%A2/id6760447863" target="_blank" rel="noopener noreferrer" style="color: var(--primary-dark);">おうち点検メモ</a>」などを公開しています。
+        </p>
 
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">期間・価格</h3>
         <p>内容や規模により異なります。まずはお気軽にご相談ください。</p>
@@ -122,8 +110,7 @@
       </div>
 
       <!-- サービス2: 便利ツール開発 -->
-      <div class="card" style="margin-bottom: 3rem;">
-        <div class="card-icon">⚙️</div>
+      <div id="tools" class="card" style="margin-bottom: 3rem;">
         <h2>便利ツール開発</h2>
         <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 1.5rem;">
           GAS（Google Apps Script）、iPhoneショートカット、小さな自動化スクリプトなどで、毎日の手作業を減らします。
@@ -147,11 +134,11 @@
 
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">提供内容</h3>
         <ul style="list-style: none; padding-left: 0;">
-          <li style="padding: 0.5rem 0;">🔍 業務フローのヒアリング・分析</li>
-          <li style="padding: 0.5rem 0;">💡 自動化の提案</li>
-          <li style="padding: 0.5rem 0;">⚙️ スクリプト・ショートカット作成</li>
-          <li style="padding: 0.5rem 0;">📝 使い方マニュアル作成</li>
-          <li style="padding: 0.5rem 0;">🛠️ 動作確認・修正対応</li>
+          <li style="padding: 0.5rem 0;">業務フローのヒアリング・分析</li>
+          <li style="padding: 0.5rem 0;">自動化の提案</li>
+          <li style="padding: 0.5rem 0;">スクリプト・ショートカット作成</li>
+          <li style="padding: 0.5rem 0;">使い方マニュアル作成</li>
+          <li style="padding: 0.5rem 0;">動作確認・修正対応</li>
         </ul>
 
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">成果物</h3>
@@ -160,41 +147,21 @@
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">よくある依頼例</h3>
 
         <h4 style="margin-top: 1.5rem; margin-bottom: 0.8rem; color: var(--primary-color);">GAS（Google Apps Script）</h4>
-        <div class="card-grid" style="margin-top: 0.5rem; margin-bottom: 2rem;">
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>スプレッドシートの自動集計・レポート作成</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>フォーム回答の自動整形・通知</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>メール自動送信（定型文、リマインダー）</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>カレンダー連携（予定の自動登録・通知）</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>複数シート間のデータ連携・同期</p>
-          </div>
+        <div class="tags" style="margin-bottom: 1.5rem;">
+          <span class="tag">スプレッドシートの自動集計・レポート作成</span>
+          <span class="tag">フォーム回答の自動整形・通知</span>
+          <span class="tag">メール自動送信（定型文、リマインダー）</span>
+          <span class="tag">カレンダー連携（予定の自動登録・通知）</span>
+          <span class="tag">複数シート間のデータ連携・同期</span>
         </div>
 
-        <h4 style="margin-top: 1.5rem; margin-bottom: 0.8rem; color: var(--primary-color);">iPhoneショートカット</h4>
-        <div class="card-grid" style="margin-top: 0.5rem;">
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>ワンタップで定型メッセージ送信</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>位置情報ベースの自動リマインダー</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>定型フォーマットでのメモ作成</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>毎日の習慣トラッキング（記録をスプレッドシートへ送信）</p>
-          </div>
-          <div class="card" style="background-color: var(--bg-color);">
-            <p>Wi-Fi接続時の自動アクション設定</p>
-          </div>
+        <h4 style="margin-top: 1rem; margin-bottom: 0.8rem; color: var(--primary-color);">iPhoneショートカット</h4>
+        <div class="tags">
+          <span class="tag">ワンタップで定型メッセージ送信</span>
+          <span class="tag">位置情報ベースの自動リマインダー</span>
+          <span class="tag">定型フォーマットでのメモ作成</span>
+          <span class="tag">毎日の習慣トラッキング</span>
+          <span class="tag">Wi-Fi接続時の自動アクション設定</span>
         </div>
 
         <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">期間・価格</h3>
@@ -204,26 +171,77 @@
         </p>
       </div>
 
+      <!-- サービス3: ホームページ制作 -->
+      <div id="homepage" class="card" style="margin-bottom: 3rem;">
+        <h2>ホームページ制作</h2>
+        <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 1.5rem;">
+          業種・雰囲気に合わせたホームページを制作します。HTMLとCSSを使ったシンプルな構成で、表示速度が速く、スマートフォンにも対応しています。
+        </p>
+
+        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">こんな方におすすめ</h3>
+        <ul style="list-style: none; padding-left: 0;">
+          <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+            <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+            ホームページをまだお持ちでない個人・小規模事業者の方
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+            <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+            既存のサイトをリニューアルしたい方
+          </li>
+          <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+            <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+            WordPressではなくシンプルな静的サイトで十分な方
+          </li>
+        </ul>
+
+        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">提供内容</h3>
+        <ul style="list-style: none; padding-left: 0;">
+          <li style="padding: 0.5rem 0;">ヒアリング・構成提案</li>
+          <li style="padding: 0.5rem 0;">デザイン・コーディング</li>
+          <li style="padding: 0.5rem 0;">スマートフォン対応（レスポンシブ）</li>
+          <li style="padding: 0.5rem 0;">公開サポート（GitHub Pages等）</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">制作サンプル</h3>
+        <div class="card-grid" style="margin-top: 1rem;">
+          <div class="card" style="background-color: var(--bg-color);">
+            <h4>企業サイト（製造業）</h4>
+            <a href="../samples/sample01/index.html" target="_blank" rel="noopener noreferrer" class="card-link">サンプルを見る</a>
+          </div>
+          <div class="card" style="background-color: var(--bg-color);">
+            <h4>整体院サイト</h4>
+            <a href="../samples/sample02/index.html" target="_blank" rel="noopener noreferrer" class="card-link">サンプルを見る</a>
+          </div>
+          <div class="card" style="background-color: var(--bg-color);">
+            <h4>飲食店サイト（パン屋）</h4>
+            <a href="../samples/sample03/index.html" target="_blank" rel="noopener noreferrer" class="card-link">サンプルを見る</a>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">期間・価格</h3>
+        <p>ページ数や内容により異なります。まずはお気軽にご相談ください。</p>
+        <p style="color: var(--text-light); font-size: 0.95rem;">
+          ※ ヒアリング後、お見積りをご提示いたします。
+        </p>
+      </div>
+
       <!-- 強み -->
       <div class="card" style="background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent-color) 100%); color: white; margin-bottom: 3rem;">
         <h2 style="color: white;">私の強み</h2>
         <ul style="list-style: none; padding-left: 0;">
           <li style="padding: 0.8rem 0; display: flex; align-items: flex-start;">
-            <span style="margin-right: 0.8rem; font-size: 1.5rem;">💪</span>
             <div>
               <strong style="display: block; margin-bottom: 0.3rem;">開発経験18年</strong>
               高校卒業後すぐにエンジニアとなり、現在も現役で開発を続けています。
             </div>
           </li>
           <li style="padding: 0.8rem 0; display: flex; align-items: flex-start;">
-            <span style="margin-right: 0.8rem; font-size: 1.5rem;">🤝</span>
             <div>
               <strong style="display: block; margin-bottom: 0.3rem;">お客様に寄り添った提案</strong>
               要望の整理から一緒に行い、最適な形を探していきます。技術用語を使わず、分かりやすく説明します。
             </div>
           </li>
           <li style="padding: 0.8rem 0; display: flex; align-items: flex-start;">
-            <span style="margin-right: 0.8rem; font-size: 1.5rem;">⚡</span>
             <div>
               <strong style="display: block; margin-bottom: 0.3rem;">小さく作って早く試す</strong>
               まずは最小限の機能で動くものを作り、確認しながら進めます。これにより、認識のズレを防げます。
@@ -234,7 +252,7 @@
 
       <!-- 注意書き -->
       <div class="notice">
-        <p>💡 <strong>未経験の開発言語への挑戦について</strong></p>
+        <p><strong>未経験の開発言語への挑戦について</strong></p>
         <p>未経験の開発言語に挑戦することも可能ですが、学習コストが乗るため料金が割高になる場合があります。まずはお気軽にご相談ください。得意な技術スタックについては<a href="about.html" style="color: var(--primary-dark); text-decoration: underline;">プロフィールページ</a>をご覧ください。</p>
       </div>
 

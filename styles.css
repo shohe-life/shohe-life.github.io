@@ -362,10 +362,6 @@ footer {
   box-shadow: var(--shadow-md);
 }
 
-.card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
 
 .card h3 {
   font-size: 1.4rem;
@@ -656,16 +652,36 @@ textarea {
 
 /* ==================== 注意書き ==================== */
 .notice {
-  background-color: #fff3cd;
-  border-left: 4px solid #ffc107;
+  background-color: #f4f7fb;
+  border-left: 3px solid var(--primary-color);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
-  border-radius: 4px;
+  border-radius: 0 6px 6px 0;
 }
 
 .notice p {
-  color: #856404;
-  font-size: 0.95rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* ==================== フェードアップアニメーション ==================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 /* ==================== ユーティリティ ==================== */

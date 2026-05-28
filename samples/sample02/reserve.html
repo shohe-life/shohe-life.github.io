@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>予約・お問い合わせ | モンブラン整体院</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav nav--scrolled">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span class="nav__logo-icon">🌿</span>モンブラン整体院</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="menu.html">メニュー・料金</a></li>
+          <li><a href="about.html">院について</a></li>
+          <li><a href="voice.html">お客様の声</a></li>
+          <li><a href="reserve.html" class="nav__cta nav__active">予約する</a></li>
+        </ul>
+      </nav>
+      <button class="nav__hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="nav__drawer">
+    <a href="menu.html">メニュー・料金</a>
+    <a href="about.html">院について</a>
+    <a href="voice.html">お客様の声</a>
+    <a href="reserve.html" class="nav__cta">予約する</a>
+  </div>
+  <div class="nav__overlay"></div>
+
+  <section class="page-hero page-hero--sm">
+    <div class="page-hero__inner">
+      <span class="page-hero__label">RESERVE</span>
+      <h1 class="page-hero__title">予約・お問い合わせ</h1>
+      <p class="page-hero__sub">オンラインフォームまたはお電話でご予約いただけます。</p>
+    </div>
+  </section>
+
+  <section class="section" id="reserve">
+    <div class="container">
+      <div class="reserve__grid">
+
+        <!-- 院内情報 -->
+        <div class="fade-up">
+          <h2 class="reserve__info-title">ご予約・来院情報</h2>
+          <table class="reserve__info-table">
+            <tr><th>住所</th><td>パフェ県タルト市ショコラ町2-5-8</td></tr>
+            <tr><th>電話</th><td><a href="tel:0000-00-0000" style="color:var(--color-accent); font-weight:700;">0000-00-0000</a></td></tr>
+            <tr><th>営業時間</th><td>10:00〜20:00<br><small style="color:var(--color-text-sub);">最終受付 19:00</small></td></tr>
+            <tr><th>定休日</th><td>火曜日・第2第4水曜日</td></tr>
+            <tr><th>駐車場</th><td>あり（3台）</td></tr>
+            <tr><th>アクセス</th><td>タルト駅より徒歩8分</td></tr>
+          </table>
+
+          <div style="background:var(--color-bg2); border-radius:14px; padding:1.5rem; margin-top:1.5rem;">
+            <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:0.75rem;">🌿 初めての方へ</h3>
+            <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.5rem;">
+              <li style="font-size:0.85rem; color:var(--color-text-sub);">・初回体験コースは <strong style="color:var(--color-accent);">¥3,300（60分）</strong> の特別価格</li>
+              <li style="font-size:0.85rem; color:var(--color-text-sub);">・施術前にカウンセリング（約15分）があります</li>
+              <li style="font-size:0.85rem; color:var(--color-text-sub);">・動きやすい服装でお越しください（着替えも用意あり）</li>
+              <li style="font-size:0.85rem; color:var(--color-text-sub);">・キャンセルは前日20時までにご連絡ください</li>
+            </ul>
+          </div>
+
+          <div style="background:var(--color-bg2); border-radius:14px; padding:1.5rem; margin-top:1rem;">
+            <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:0.5rem;">📞 お電話でのご予約</h3>
+            <p style="font-size:0.85rem; color:var(--color-text-sub);">お電話でも承っております。<br>営業時間内（10:00〜20:00）にお気軽にご連絡ください。</p>
+            <a href="tel:0000-00-0000" class="btn btn--outline" style="margin-top:0.75rem; display:inline-block; font-size:0.9rem;">📞 0000-00-0000</a>
+          </div>
+        </div>
+
+        <!-- フォーム -->
+        <div class="fade-up delay-2">
+          <h2 class="reserve__info-title">オンライン予約フォーム</h2>
+          <form>
+            <div class="form-group">
+              <label class="form-label">お名前<span>必須</span></label>
+              <input type="text" class="form-input" placeholder="モンブラン 太郎">
+            </div>
+            <div class="form-group">
+              <label class="form-label">電話番号<span>必須</span></label>
+              <input type="tel" class="form-input" placeholder="000-0000-0000">
+            </div>
+            <div class="form-group">
+              <label class="form-label">メールアドレス<span>必須</span></label>
+              <input type="email" class="form-input" placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">ご希望のメニュー<span>必須</span></label>
+              <select class="form-select">
+                <option value="">選択してください</option>
+                <option>初回体験コース（¥3,300 / 60分）</option>
+                <option>全身調整コース（¥6,600〜 / 60分）</option>
+                <option>肩こり・首こり集中ケア（¥4,400〜 / 40分）</option>
+                <option>腰痛改善コース（¥7,700〜 / 70分）</option>
+                <option>骨盤矯正コース（¥7,700〜 / 70分）</option>
+                <option>その他・相談したい</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">ご希望の日時（第1希望）<span>必須</span></label>
+              <input type="datetime-local" class="form-input">
+            </div>
+            <div class="form-group">
+              <label class="form-label">ご希望の日時（第2希望）</label>
+              <input type="datetime-local" class="form-input">
+            </div>
+            <div class="form-group">
+              <label class="form-label">お悩み・ご要望</label>
+              <textarea class="form-textarea" placeholder="気になる症状や気になっていること、何でもお気軽にご記入ください。"></textarea>
+            </div>
+            <button type="submit" class="form-submit">予約内容を送信する</button>
+            <p style="font-size:0.78rem; color:var(--color-text-sub); margin-top:0.75rem; text-align:center;">送信後、確認メールをお送りします。<br>1営業日以内にご連絡いたします。</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">🌿 モンブラン整体院</p>
+      <p class="footer__tagline">パフェ県タルト市ショコラ町2-5-8</p>
+      <nav class="footer__nav">
+        <a href="index.html">ホーム</a>
+        <a href="menu.html">メニュー・料金</a>
+        <a href="about.html">院について</a>
+        <a href="voice.html">お客様の声</a>
+        <a href="reserve.html">予約・お問い合わせ</a>
+      </nav>
+      <p class="footer__copy">© 2026 モンブラン整体院. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 50));
+    const hamburger = document.querySelector('.nav__hamburger');
+    const drawer = document.querySelector('.nav__drawer');
+    const overlay = document.querySelector('.nav__overlay');
+    function closeMenu() { hamburger.classList.remove('is-open'); drawer.classList.remove('is-open'); overlay.classList.remove('is-open'); }
+    hamburger.addEventListener('click', () => { const o = !drawer.classList.contains('is-open'); o ? (drawer.classList.add('is-open'), overlay.classList.add('is-open'), hamburger.classList.add('is-open')) : closeMenu(); });
+    overlay.addEventListener('click', closeMenu);
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); } }); }, { threshold: 0.15 });
+    fadeEls.forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
