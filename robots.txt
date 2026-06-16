@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourusername.github.io/home/sitemap.xml
+User-agent: Google-adstxt
+Disallow:
+
+Sitemap: https://shohe-life.github.io/sitemap.xml
