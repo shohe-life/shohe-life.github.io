@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="iPhoneアプリ「金券カウンター」のサポートページ。使い方、読み取れないときの対処、金種の追加、CSV・PDFの書き出し方、お問い合わせ先をまとめています。">
+  <meta name="keywords" content="金券カウンター,サポート,使い方,QRコード,集計,アプリ">
+  <title>金券カウンター サポート | しょへ - ソフトエンジニア</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://shohe-life.github.io/support/kinken-counter.html">
+
+  <!-- OGP -->
+  <meta property="og:title" content="アプリ「金券カウンター」サポート | しょへ - ソフトエンジニア">
+  <meta property="og:description" content="「金券カウンター」の使い方・よくある質問・お問い合わせ先をまとめたサポートページです。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shohe-life.github.io/support/kinken-counter.html">
+  <meta property="og:image" content="https://shohe-life.github.io/assets/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- 構造化データ（よくある質問） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "QRコードが読み取れません",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "スマホをスタンドなどで固定し、「ピントを固定」を押してから券を通してください。券が折れていたり、光が反射していると読み取りにくくなります。読み取れない券は、枚数をタップして手で入力することもできます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "「対象外のQR」と表示されます",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "本アプリは、QRコードの中身の数字をそのまま金額として読み取ります。設定の「読み取る金種」に、その金額が登録されていない場合は対象外になります。設定から金額を追加してください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "同じ券が2回数えられてしまいます",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "設定の「券の切れ目」を長くしてください（例：0.3秒 → 0.4秒）。逆に、素早く券を通したときに数え落ちる場合は短くします。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "CSVがExcelで文字化けします",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "本アプリはExcelで開いても文字化けしない形式（UTF-8 BOM付き）で書き出しています。文字化けする場合は、CSVを直接開くのではなく、Excelの「データ」→「テキストファイル」から文字コードUTF-8を指定して読み込んでください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "集計したデータはどこに保存されますか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "すべて端末の中だけに保存されます。サーバーへ送信することはありません。アプリを削除するとデータも消えるため、書き出したCSVやPDFは別途保存してください。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">しょへ</a>
+      <button class="hamburger" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="../services.html">サービス</a></li>
+          <li><a href="../works.html">実績</a></li>
+          <li><a href="../about.html">プロフィール</a></li>
+          <li><a href="../contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ページヘッダー -->
+  <section class="hero" style="padding: 3rem 1.5rem;">
+    <div class="hero-content">
+      <h1>金券カウンター<br>サポート</h1>
+      <p>使い方とよくある質問</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="profile-section">
+
+          <p style="margin-bottom: 2rem;">
+            iPhoneアプリ「金券カウンター」のサポートページです。
+            イベントで回収したQRコード付きの金券を、店舗ごとに読み取って集計するアプリです。
+            ご不明な点は、下記の<a href="#contact">お問い合わせ</a>からご連絡ください。
+          </p>
+
+          <!-- 使い方 -->
+          <h2 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-dark);">使い方</h2>
+          <ol style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem;">画面右上の「＋」から<strong>店舗を追加</strong>します。</li>
+            <li style="margin-bottom: 0.75rem;">スマホをスタンドなどで<strong>下向きに固定</strong>し、「ピントを固定」を押します。</li>
+            <li style="margin-bottom: 0.75rem;">カメラの下で<strong>金券を1枚ずつスライド</strong>させます。読み取るたびに合計が増え、金額に応じた回数の「ぴ」が鳴ります。</li>
+            <li style="margin-bottom: 0.75rem;">その店舗が終わったら、メニューから<strong>「この店舗を締める」</strong>を選びます。</li>
+            <li style="margin-bottom: 0.75rem;">全店舗が終わったら、下部の<strong>「集計結果」</strong>からCSVまたはPDFで書き出します。</li>
+          </ol>
+
+          <!-- よくある質問 -->
+          <h2 style="margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-dark);">よくある質問</h2>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">QRコードが読み取れません</h3>
+          <p style="margin-bottom: 1rem;">
+            スマホを固定し、<strong>「ピントを固定」</strong>を押してから券を通してください。
+            券が折れていたり、照明が反射していると読み取りにくくなります。
+            どうしても読めない券は、<strong>枚数をタップして手で入力</strong>できます。
+            右上のキーボードのボタンを押すと、カメラを止めて手入力だけで使うこともできます。
+          </p>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">「対象外のQR」と表示されます</h3>
+          <p style="margin-bottom: 1rem;">
+            本アプリは、<strong>QRコードの中身の数字をそのまま金額として</strong>読み取ります。
+            設定の「読み取る金種」にその金額が登録されていない場合、対象外として数えません。
+            設定から金額を追加してください（50円・100円・200円が最初から入っています）。
+            なお、QRコードに固有のIDが入っている券や、バーコードには対応していません。
+          </p>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">同じ券が2回数えられてしまいます</h3>
+          <p style="margin-bottom: 1rem;">
+            設定の<strong>「券の切れ目」</strong>を長くしてください（例：0.3秒 → 0.4秒）。
+            逆に、素早く券を通したときに数え落ちる場合は短くします。
+          </p>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">数え間違えました</h3>
+          <p style="margin-bottom: 1rem;">
+            合計のすぐ下にある<strong>「取り消す」</strong>で、直前の1件を戻せます。
+            それより前のものは、メニューの「読み取りの明細」でいつ何が入ったかを確認したうえで、
+            枚数を直接打ち直してください。
+          </p>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">店舗名を間違えました</h3>
+          <p style="margin-bottom: 1rem;">
+            メニューの<strong>「店舗名を変更」</strong>から直せます（店舗一覧で左にスワイプしても変更できます）。
+            名前を変えても、数えた枚数と明細はそのまま残ります。
+          </p>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">CSVがExcelで文字化けします</h3>
+          <p style="margin-bottom: 1rem;">
+            本アプリはExcelで開いても文字化けしない形式（UTF-8 BOM付き）で書き出しています。
+            それでも文字化けする場合は、CSVを直接開かず、Excelの「データ」→「テキストまたはCSVから」で
+            文字コードにUTF-8を指定して読み込んでください。
+          </p>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">次のイベントで使い回したい</h3>
+          <p style="margin-bottom: 1rem;">
+            設定の<strong>「すべて削除（次のイベント用）」</strong>で、店舗と集計をまとめて消せます。
+            金種の設定は残ります。<strong>消す前に必ずCSVかPDFを書き出してください</strong>（元には戻せません）。
+          </p>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">集計したデータはどこに保存されますか</h3>
+          <p style="margin-bottom: 1rem;">
+            すべて<strong>端末の中だけ</strong>に保存されます。サーバーへ送信することはありません。
+            アプリを削除するとデータも消えますので、書き出したCSV・PDFは別途保存してください。
+            詳しくは<a href="../privacy/kinken-counter.html">プライバシーポリシー</a>をご覧ください。
+          </p>
+
+          <!-- 動作環境 -->
+          <h2 style="margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-dark);">動作環境</h2>
+          <p style="margin-bottom: 1rem;">
+            iPhone（iOS 17.0 以降）。QRコードの読み取りにカメラを使用します。<br>
+            iPadには対応していません。
+          </p>
+
+          <!-- お問い合わせ -->
+          <h2 id="contact" style="margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-dark);">お問い合わせ</h2>
+          <p style="margin-bottom: 1rem;">
+            不具合のご報告・ご要望・ご質問は、以下のフォームからお送りください。
+            返信は数日いただくことがあります。
+          </p>
+          <p style="margin-bottom: 1rem;">
+            <a href="../contact.html" class="btn">お問い合わせフォームへ</a>
+          </p>
+          <p style="margin-bottom: 1rem;">
+            不具合のご報告の際は、<strong>お使いのiPhoneの機種・iOSのバージョン・どの画面で起きたか</strong>を
+            添えていただけると、原因を特定しやすくなります。
+          </p>
+
+          <p style="margin-top: 2.5rem; color: var(--text-light); font-size: 0.9rem;">
+            最終更新日: 2026年8月24日
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>しょへ</h3>
+          <p>ソフトエンジニア / アプリ開発</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>サイトマップ</h3>
+          <ul>
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../services.html">サービス</a></li>
+            <li><a href="../works.html">実績</a></li>
+            <li><a href="../about.html">プロフィール</a></li>
+            <li><a href="../contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>リンク</h3>
+          <ul>
+            <li><a href="https://coconala.com/users/1224378" target="_blank" rel="noopener noreferrer">ココナラ</a></li>
+            <li><a href="https://note.com/shohe_lifehack" target="_blank" rel="noopener noreferrer">note</a></li>
+            <li><a href="https://brain-market.com/u/shohe_lifehack" target="_blank" rel="noopener noreferrer">Brain</a></li>
+            <li><a href="https://x.com/shohe_lifehack" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+            <li><a href="../privacy.html">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 しょへ. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../script.js"></script>
+</body>
+</html>
