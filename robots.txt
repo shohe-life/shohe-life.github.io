@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-User-agent: Google-adstxt
-Disallow:
-
 Sitemap: https://shohe-life.github.io/sitemap.xml
